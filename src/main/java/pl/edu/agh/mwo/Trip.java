@@ -10,6 +10,12 @@ public class Trip {
 	
 	Collection <Photo> photos = new ArrayList<Photo>();
 
+	
+	public Trip (String name, String description) {
+		this.name = name;
+		this.description = description;		
+	}	
+	
 	public Collection<Photo> getPhotos() {
 		return photos;
 	}

@@ -19,7 +19,16 @@ public class TripManager {
 		return trips;
 	}
 
-	public String findTrip() {
-
+	public Trip findTrip (String keyword) {
+		
+		for (Trip trip:trips)
+			if (trip.name.equals(keyword) || trip.description.equals(keyword))
+				return trip;		
+				
+			else 
+				return null;				
 	}
+
+
 }
+	
