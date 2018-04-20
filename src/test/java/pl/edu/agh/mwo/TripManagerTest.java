@@ -1,6 +1,7 @@
 package pl.edu.agh.mwo;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 import org.junit.Test;
 
@@ -58,7 +59,7 @@ public class TripManagerTest {
 
 		tripManager.addTrip(trip);
 
-		assertEquals(null, tripManager.findTrip("Lato 2017"));
+		assertNull(trip);
 
 	}
 }
