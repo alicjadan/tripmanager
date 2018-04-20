@@ -9,7 +9,7 @@ public class TripTest {
 	@Test
 	public void addPhoto() {
 		Trip trip = new Trip("Wakacje", "Lato 2017");
-		Photo photo = new Photo();
+		Photo photo = new Photo("2015");
 		
 		assertEquals(0, trip.getPhotos().size());
 		
